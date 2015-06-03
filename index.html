@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<body background = "fondo.jpg">
+	<meta charset="UTF-8">
+	<script type="text/javascript">
+		
+		//Definimos la funcion de validacion de multiplos
+		function multiplos(a)
+		{
+			if((Number(a) % 3)==0  && (Number(a)% 5) ==0)
+			{
+				alert("Pin Pan Pun");
+			}
+			else if ((Number(a) % 3)==0){
+				alert("Pin");
+			}
+			else if((Number(a)) % 5 ==0){
+				alert("Pun");
+			}else{
+				alert("El numero ingresado NO es multiplo de 3 ni multiplo de 5.")
+			}
+		}
+		//Aqui termina la funcion
+
+	</script>
+
+	<title>Validador de multiplos</title>
+</head>
+<body>
+	<section>
+		<article><br><br><br>
+			<center><p><h1>Por favor, agregue en el siguiente campo un numero para validar si es multiplo de 3, de 5, o de ambos.</p></center>
+			<br><br>
+			<center><form name="formulario" id="formulario" method="get">
+				<input id="dato" type="text" />
+				<input type="button" onclick="multiplos(document.getElementById('dato').value);" value="Validar"></center?
+			</form>
+		</article>
+	</section>
+</body>
+</html>
